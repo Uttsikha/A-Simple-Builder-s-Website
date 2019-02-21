@@ -1,0 +1,25 @@
+
+			.container{
+				width: 1000px;
+				height: 500px;
+				background: silver;
+				margin 0 auto;
+			}
+				
+				.blocks{
+					padding:50px;
+				width: 500px;
+				height: 500px;
+				float: left;	
+				}
+				.elem{
+					width: 200px;
+					height: 30px;
+				}
+				
+				
+				#css_coding{
+					display: none;
+					
+					
+				}

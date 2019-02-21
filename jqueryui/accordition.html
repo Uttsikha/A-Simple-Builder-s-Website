@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<title>Some jquery ui</title>
+		<script	src="js/jquery.js"></script>
+		<script	src="js/jquery-ui.js"></script>
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<script>
+		
+ 			 $(document).ready(function(){
+					$('#accordion').accordion({
+						collapsible: true
+			});		
+					});
+			$(document).ready(function(){
+					$('#div1').draggable({revert: "valid"});
+					$('#div3').draggable({revert: "invalid"});
+					$('#div2').droppable({
+				//	accept: '#div1',
+							drop: function(event, ui){
+									$(this).addClass('dropped').text('Got it');	
+						}									
+					});
+					
+					
+					});
+			$(document).ready(function(){
+					$('#main_div, #main_div2').sortable({
+						connectWith: '.linking'
+					}
+					);
+					
+					});
+
+
+
+		</script>
+		<style>
+		body{
+		padding: 50px;
+		
+		}	
+		#div1 {
+				background: red; 
+				border: black 2px solid ;
+				width: 200px; 
+				height: 200px; float: left;}
+		#div3 {
+				background: orange; 
+				border: black 2px solid ;
+				width: 200px; 
+				height: 200px; float: left;}
+		#div2 {
+				
+				border: black 2px solid ; 
+				width: 400px;
+				height: 400px; 
+				float: right;
+				}
+			.dropped {
+			background: blue;
+			}
+			.div4{
+				background: silver;
+					text-align: center;
+				border: black 2px solid ;
+				width: 200px; 
+				height: 40px;
+				margin: 20px;
+				}
+			.div5{
+				background: yellow;
+					text-align: center;
+				border: black 2px solid ;
+				width: 200px; 
+				height: 40px;
+				margin: 20px;
+				}
+				#main_div{	
+				border: black 2px solid ;
+			padding: 20px;
+			float: left;
+			width: 250px;
+			}
+				#main_div2{float: left; border: 1px solid silver; 
+				padding: 20px;}
+			
+			
+		</style>
+		</head>
+	<body>
+	<div id="accordion" >
+	<h3>Draggable and Droppable</h3>
+	<div ><div id="div1">	</div>
+	<div id="div2"></div>
+	<div id="div3"> </div></div>
+	
+	<h3>Sortable</h3>
+	<div ><div id="main_div" class="linking">
+	<div class="div4">A	</div>
+	<div class="div4">	B</div>
+	<div class="div4">	C</div>
+	<div class="div4">	D</div>
+		</div>
+	<div id="main_div2" class="linking">
+	<div class="div5">1	</div>
+	<div class="div5">	2</div>
+	<div class="div5">	3</div>
+	<div class="div5">	4</div>
+		</div></div>
+		</div>
+	<div>
+		<a href="css_generator.html">Wanna see a CSS Geneerator?</a>
+		<a href="js/style.html">Or some jquery functionality?</a>
+
+	</div>
+	</body>
+</html>

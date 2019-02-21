@@ -1,0 +1,59 @@
+.navbar-custom{
+	
+	position: absolute;
+	top: 0;
+	width: 100%;
+	
+}
+.navbar a{
+	color: white;
+	font-weight: bold;
+	
+}
+.navbar-custom .nav-item:hover .nav-link {
+	background: orange;
+}
+header{
+	height: 450px;
+	background: orange;
+	color: white;
+	padding: 150px 0;
+}
+header h1{
+	font-size: 50px;
+	text-shadow: 3px 3px 2px black;
+	
+}
+header p{
+	font-size: 20px;
+	text-shadow: 2px 2px 2px black;
+	text-shadow: 3px 3px 2px black;
+}
+.block-a{
+	font-size: 20px;
+	margin: 20px 0;
+	border-top: 1px solid gray;
+	padding: 5px 0;
+}
+
+.block-b{
+	font-size: 20px;
+	border-bottom: 1px solid gray;
+	padding: 5px 0;
+	background: #f1f1f1; 
+}
+.footer{
+	width: 100%; padding: 20px 0; background: black;
+	color: white;
+	background: gray;
+	
+}
+.img-fluid{
+	width: 250px;
+	height: 200px;
+}
+.about_para{
+	line-height:30px;
+	font-size: 18px;
+	
+}

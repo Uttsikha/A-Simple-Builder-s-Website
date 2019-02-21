@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<title>Just jquery</title>
+		<script	src="jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+			$('#div1').click(function(){
+				
+						$('#div2').fadeToggle();
+					//alert('The div has been clicked');
+				});
+			$('#div3').click(function(){
+				
+						$('#div4').slideToggle();
+					//alert('The div has been clicked');
+				});
+			
+					
+			
+			});
+			$(document).ready(function(){
+					$('#div7').click(function(){
+							var var1=$(this).text();
+							alert(var1);
+							
+					$('#div8').text(var1);
+							
+					
+					});
+					
+					
+					$('#btn1').click(function(){
+							var var2 =$('#div7').html();
+							alert(var2);
+					});
+					$('#btn2').click(function(){
+							var var3 =$('#div7').text();
+							
+					$('#div8').text(var3);
+					});
+					$('#btn3').click(function(){
+							var var4 =$('#div7').html();
+							
+					$('#div8').html(var4);
+					});
+					$('#btn4').click(function(){
+							
+							var var5 =$('#div7').html();
+							$('#div8').text(var5);
+					});
+					
+					});
+			$(document).ready(function(){
+					$('#btn5').click(function(){
+							
+					$('#para1').append('<p>Hello world</p>');
+							
+					
+					});
+					$('#btn6').click(function(){
+							
+					$('#ol1').append('<li>new list itme</li>');
+							
+					
+					});
+					$('#btn8').click(function(){
+							
+					$('#ol1').prepend('<li>new content list itme</li>');
+							
+					
+					});
+					$('#btn7').click(function(){
+							
+					$('#para1').prepend('<p>new content</p>');
+							
+					
+					});
+					$('#btn9').click(function(){
+							
+					$('#para1').after('<p>new content after</p>');
+							
+					
+					});
+					$('#btn10').click(function(){
+							
+					$('#para1').before('<p>new content before</p>');
+							
+					
+					});
+					
+					$('#btn11').click(function(){
+						
+					$('#para1').remove();
+							
+					
+					});
+					$('#btn12').click(function(){
+							
+					$('#para1').empty();
+							
+					
+					});
+					
+					
+					
+					});
+		</script>
+		<style>
+			.main{
+			margin: 10px;
+		
+			}
+			.head_style{
+			background: purple;
+			width: 100%; 
+			height:50px; 
+			text-align: center;
+			}
+			.body_style{
+			background: orange; 
+			width: 100%; 
+			height:200px; 
+			}
+				#para1{
+		
+		background: blue;
+		color: white;
+		
+			}
+		</style>
+		</head>
+	<body>
+		<div class="main">
+		<div id="div1" class="head_style">Click to Toggle</div>
+		<div id= "div2" class="body_style">
+			<button id="btn1">GEt the HTML</button>
+			<button id="btn2">Copy and paste</button>
+			<button id="btn3">Copy and paste html</button>
+			<button id="btn4">Copy and paste (html into text)</button>
+			<div id= "div7" >This is<u> some </u>text</div>
+			<div class="body_style" id="div8"></div>
+		</div>
+	</div>
+<div class="main">
+		<div id="div3" class="head_style">Click to Toggle</div>
+		<div id= "div4" class="body_style" style="height:1000px;" >
+			<button id="btn5">Add more content inside</button>
+			<button id="btn6">Add more content before inside</button>
+				
+			<button id="btn7">Add more content in list inside</button>
+			<button id="btn8">Add more content before in list inside</button>
+			<button id="btn9">Add more content after</button>
+			<button id="btn10">Add more content before</button>
+			<button id="btn11">Remove element and its children</button>
+			<button id="btn12">Remove element's children</button>
+
+			<div id="para1">
+				<p>This is first paara</p>
+				<p>This is second paara</p>
+		</div>
+		<ol id="ol1">
+				<li>First list item</li>
+				<li>Second list item</li>
+				<li>Third list item</li>
+		</ol>
+		</div>
+		<a href="../accordition.html">Let's get back </a>
+	</div>
+
+		</body>
+</ht
